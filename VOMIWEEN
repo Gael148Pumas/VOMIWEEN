@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Evento de Halloween</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: "Trebuchet MS", sans-serif;
+      background-color: #0d0d0d;
+      color: #f5f5f5;
+      text-align: center;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    h1 {
+      font-size: 3rem;
+      color: #ff7518;
+      text-shadow: 2px 2px 10px black;
+      margin-bottom: 20px;
+    }
+
+    .seccion {
+      margin-top: 40px;
+      max-width: 600px;
+      padding: 20px;
+      border: 2px dashed #ff7518;
+      border-radius: 10px;
+    }
+
+    .oculto {
+      display: none;
+    }
+
+    footer {
+      position: absolute;
+      bottom: 10px;
+      font-size: 0.8rem;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+  <h1>VOMIWEEN</h1>
+  
+  <!-- Texto inicial -->
+  <div class="seccion" id="proximamente">
+    <h2>Próximamente...</h2>
+    <p>Estamos preparando algo terroríficamente divertido 👻</p>
+  </div>
+
+  <!-- Sección de ubicación (puedes quitar la clase "oculto" cuando quieras mostrarla) -->
+  <div class="seccion oculto" id="ubicacion">
+    <h2>📍 Ubicación</h2>
+    <p>Aquí podrás poner la dirección o un mapa de Google Maps.</p>
+  </div>
+
+  <!-- Sección de menú -->
+  <div class="seccion oculto" id="menu">
+    <h2>🍴 Menú del Evento</h2>
+    <ul>
+      <li>Pócima sangrienta (bebida especial)</li>
+      <li>Dedos de bruja (botana)</li>
+      <li>Pastel fantasma</li>
+    </ul>
+  </div>
+
+  <footer>
+    © 2025 Fiesta de Halloween
+  </footer>
+
+  <script>
+    // Ejemplo: mostrar ubicación y menú más adelante
+    // Solo tienes que quitar "oculto" desde aquí o en el HTML
+    // document.getElementById("ubicacion").classList.remove("oculto");
+    // document.getElementById("menu").classList.remove("oculto");
+  </script>
+</body>
+</html>
